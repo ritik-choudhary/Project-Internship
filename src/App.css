@@ -237,10 +237,21 @@ body {
 
 /* media queries */
 
-@media screen and (min-width: 576px){
-  /* .search-bar{
+@media screen and (max-width: 576px){
+  .App{
+    min-width: 100vw;
+  }
+  .search-bar{
     display: flex;
-    flex-wrap: wrap;
     align-items: baseline;
-  } */
+    white-space: nowrap;
+  }
+  .dashboard-content{
+    flex-direction: column;
+  }
+  .nav{
+    width: 10vw;
+    height: 100%;
+  }
 }
+
